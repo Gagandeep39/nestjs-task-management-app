@@ -32,3 +32,15 @@
 - All services are provider but vice versa is not true
 - By default they are singleton
 - Main source of bussiness logic
+
+### Pipes
+
+- Operates on router handler before being procesed by router
+- Used for data trasformation or data validation
+- Can be used to throw error which will be handled by Nestjs
+- Can be async
+- Inbuilt pipe: `ValidationPipe` - Used for data validation, `ParseIntPipe` - Check if number is an intege
+- Implements `PipeTransform` class and created with `@Injectable` decorator
+- Parameter level pipe - Aplied on parameters
+- Global Pipes - Applied to all incoming request
+- Create better pipes using `class-validator`, `class-transformer`
