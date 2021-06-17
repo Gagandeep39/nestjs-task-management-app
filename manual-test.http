@@ -34,3 +34,12 @@ Content-Type: application/json
 {
   "status": "IN_PROGRESS"
 }
+
+### Update a task - Invalid
+PATCH http://localhost:3000/tasks/{id}/status
+Content-Type: application/json
+
+{
+  "status": "IN_PRO"
+}
+
