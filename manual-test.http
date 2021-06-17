@@ -7,6 +7,9 @@ GET http://localhost:3000/tasks/{id}
 ### Fetch with Query
 GET http://localhost:3000/tasks?status=OPEN&search=lear
 
+### Fetch with Query - Invalid
+GET http://localhost:3000/tasks?status=OPE
+
 ### Create a new task
 POST http://localhost:3000/tasks
 Content-Type: application/json
