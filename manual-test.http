@@ -12,3 +12,6 @@ Content-Type: application/json
   "title": "Learn NestJS",
   "description": "It is a backend JS aplication"
 }
+
+### Delete a task
+DELETE http://localhost:3000/tasks/{id}
