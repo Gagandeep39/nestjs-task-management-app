@@ -12,6 +12,15 @@ POST http://localhost:3000/tasks
 Content-Type: application/json
 
 {
+  "title": "Learn NestJS",
+  "description": "It is a backend JS aplication"
+}
+
+### Create a new task - Invalid request
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
   "description": "It is a backend JS aplication"
 }
 
