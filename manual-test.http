@@ -1,6 +1,9 @@
 ### Fetch All tasks
 GET http://localhost:3000/tasks
 
+### Fetch By ID
+GET http://localhost:3000/tasks/{id}
+
 ### Create a new task
 POST http://localhost:3000/tasks
 Content-Type: application/json
