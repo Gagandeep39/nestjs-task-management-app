@@ -1,3 +1,4 @@
+import { compareSync } from 'bcrypt';
 import {
   BaseEntity,
   Column,
@@ -17,4 +18,9 @@ export class User extends BaseEntity {
 
   @Column()
   password: string;
+
+  validatePassword(password: string): boolean {
+    const result = compareSync(password, this.password);
+    return result;
+  }
 }
