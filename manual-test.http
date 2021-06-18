@@ -47,10 +47,21 @@ Content-Type: application/json
 }
 
 ################################################
-## Sign Up
+## Authentication
 ################################################
 
+
+### Sign Up
 POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "gagan",
+  "password": "P@ssw0rd"
+}
+
+### Sign In
+POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
