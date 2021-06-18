@@ -46,3 +46,14 @@ Content-Type: application/json
   "status": "IN_PRO"
 }
 
+################################################
+## Sign Up
+################################################
+
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "gagan",
+  "password": "P@ssw0rd"
+}
