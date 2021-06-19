@@ -24,4 +24,9 @@ export class Task extends BaseEntity {
 
   @ManyToOne(() => User, (user) => user.tasks, { eager: false })
   user: User;
+
+  // Already created for us by type orm for many to one
+  // We are explicity pecifiying here because we need it while executing query in task repo
+  @Column()
+  userId: number;
 }
