@@ -72,3 +72,8 @@ Content-Type: application/json
 ### Protected Route
 POST http://localhost:3000/auth/protected
 Authorization: Bearer [Token]
+
+
+### Custom Decorator
+POST http://localhost:3000/auth/abc
+Authorization: Bearer [Token]
