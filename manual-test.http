@@ -68,3 +68,7 @@ Content-Type: application/json
   "username": "gagan",
   "password": "P@ssw0rd"
 }
+
+### Protected Route
+POST http://localhost:3000/auth/protected
+Authorization: Bearer [Token]
