@@ -20,6 +20,7 @@ import { UserRepository } from './user.repository';
   ],
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy],
-  exports: [JwtStrategy],
+  // PassportModule exported as we ave configured password with JWT in current Module which will be used in other module
+  exports: [JwtStrategy, PassportModule],
 })
 export class AuthModule {}
