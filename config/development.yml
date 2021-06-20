@@ -1,0 +1,10 @@
+# Specific to Development
+# ill override default.yml values
+db:
+  host: 'localhost'
+  username: 'gagan'
+  password: '123456'
+  synchronize: true
+
+jwt:
+  secret: 'secret'
