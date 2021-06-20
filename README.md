@@ -14,7 +14,9 @@
 
 1. Lauch Database using Docker
    - Run in root directory `docker compose up`
-2. Install dependencies using
+2. Install dependencies using `install:package`
+3. Run server code using `start:server`
+4. Run client code using `start:client`
 
 ## Important Commands
 
