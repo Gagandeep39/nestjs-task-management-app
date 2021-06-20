@@ -1,5 +1,21 @@
 # Task Management App
 
+- [Task Management App](#task-management-app)
+  - [Steps to run](#steps-to-run)
+  - [Important Commands](#important-commands)
+  - [Notes](#notes)
+    - [Modules](#modules)
+    - [Decoraters](#decoraters)
+    - [Providers](#providers)
+    - [Services](#services)
+    - [Pipes](#pipes)
+
+## Steps to run
+
+1. Lauch Database using Docker
+   - Run in root directory `docker compose up`
+2. Install dependencies using
+
 ## Important Commands
 
 - `npx @nestjs/cli new nestjs-task-management .` Create project using nest cli
