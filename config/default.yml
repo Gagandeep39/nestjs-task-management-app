@@ -1,4 +1,5 @@
 # All configuration non-specific o ay environment
+# Specific environment that will work allong with default is specifie using NODE_ENV
 server:
   port: 3000
 
