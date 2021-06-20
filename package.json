@@ -1,0 +1,12 @@
+{
+  "name": "nestjs-task-management",
+  "version": "1.0.0",
+  "repository": "https://github.com/Gagandeep39/nestjs-task-management-app.git",
+  "author": "Gagandeep Singh <singh.gagandeep3911@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:server": "cd server && yarn start:dev",
+    "start:client": "cd client && yarn start",
+    "install:package": "cd server && yarn install && cd ../client && yarn install"
+  }
+}
