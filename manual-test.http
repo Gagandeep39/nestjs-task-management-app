@@ -1,17 +1,22 @@
 ### Fetch All tasks
 GET http://localhost:3000/tasks
+Authorization: Bearer [Token]
 
 ### Fetch By ID
 GET http://localhost:3000/tasks/{id}
+Authorization: Bearer [Token]
 
 ### Fetch with Query
 GET http://localhost:3000/tasks?status=OPEN&search=lear
+Authorization: Bearer [Token]
 
 ### Fetch with Query - Invalid
 GET http://localhost:3000/tasks?status=OPE
+Authorization: Bearer [Token]
 
 ### Create a new task
 POST http://localhost:3000/tasks
+Authorization: Bearer [Token]
 Content-Type: application/json
 
 {
@@ -29,9 +34,11 @@ Content-Type: application/json
 
 ### Delete a task
 DELETE http://localhost:3000/tasks/{id}
+Authorization: Bearer [Token]
 
 ### Update a task
 PATCH http://localhost:3000/tasks/{id}/status
+Authorization: Bearer [Token]
 Content-Type: application/json
 
 {
@@ -40,6 +47,7 @@ Content-Type: application/json
 
 ### Update a task - Invalid
 PATCH http://localhost:3000/tasks/{id}/status
+Authorization: Bearer [Token]
 Content-Type: application/json
 
 {
