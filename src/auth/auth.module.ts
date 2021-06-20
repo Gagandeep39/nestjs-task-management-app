@@ -2,18 +2,20 @@ import { Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { get } from 'config';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
 import { UserRepository } from './user.repository';
+const jwtConfig: any = get('jwt');
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([UserRepository]),
     JwtModule.register({
-      secret: 'secret',
+      secret: jwtConfig.secret,
       signOptions: {
-        expiresIn: 3600,
+        expiresIn: jwtConfig.expiresIn,
       },
     }),
     PassportModule.register({ defaultStrategy: 'jwt' }),
